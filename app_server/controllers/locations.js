@@ -16,7 +16,7 @@ const homelist = (req, res) => {
       qs:{
           lng: 127.1678736,
           lat: 37.4524364,
-          maxDistance: 2000000
+          maxDistance: 200000
       }
   };
   request(requestOptions,(err, {statusCode}, body) => {
