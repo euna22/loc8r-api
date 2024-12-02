@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const readLine = require('readline');
 mongoose.set("strictQuery", false);
 
-//const dbURI = 'mongodb://localhost/Loc8r';
+// const dbURI = 'mongodb://localhost/Loc8r';
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbURI = `mongodb+srv://myatlasdbuser:${dbPassword}@cluster0.drlpa.mongodb.net/Loc8r`;
 
@@ -59,3 +59,6 @@ process.on('SIGTERM', () => {
 connect();
 
 require('./locations');
+require('./users');
+
+
